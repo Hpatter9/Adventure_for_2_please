@@ -1,26 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-import React from 'react';
+import React from'react';
+import Homepage from './pages/homepage/homepage';
+import Future from './pages/future/future';
+import ContactUs from './pages/contactus/contactus';
+import SoFar from './pages/sofar/sofar';
+import Layout from "./components/layout/layout";
+import pages from "./pages/pages";
+import './App.css'
+import { Route, Routes } from "react-router-dom";
 
-function App() {
+const App =()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Layout>
+        <Routes>
+          <Route path={pages.get("homepage").path} element={<Homepage />} />
+          <Route path={pages.get("future").path} element= {<Future />} />
+          <Route path={pages.get("contactus").path} element= {<ContactUs />} />
+          <Route path={pages.get("sofar").path} element= {<SoFar />} />
+          <Route path="*" element={<Homepage />} />
+        </Routes>
+      </Layout>
     </div>
-  );
+  )
 }
 
 export default App;
