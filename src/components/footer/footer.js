@@ -1,16 +1,17 @@
 import React from 'react';
 import './footer.css';
+import footerLogo from '../../assets/af2p-logo2.png'
 
 const Footer = ()=> {
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);
       };
-
+      
     return (
-        <footer className = 'footer-background'>
-            <div className='footer-container'>
-                {/* <img src={whitelemonlogo} alt = 'Little lemon logo' className='footer-logo' height={50}></img> */}
+        <footer className = 'footer-container'>
+            <div className='footer-background'>
+                <img src ={footerLogo} alt = 'adventure for 2 please logo' className='footer-logo' height={50}></img>
                 <ul className= 'sitenav-list'>
                     <li className = 'sitenav-title'>Site Navigation</li>
                     <li className = 'site-list1'><a href="#home" onClick={scrollToTop}>Home</a></li>
@@ -21,7 +22,7 @@ const Footer = ()=> {
                 <ul className= 'contactus-list'>
                     <li className = 'contact-title'>Contact Us</li>
                     <li className = 'contact-item'>(555) 123-4567</li>
-                    <li className = 'contact-item'>Info@littlelemon.com</li>
+                    <li className = 'contact-item'>Info@gmail.com</li>
                     <li className = 'contact-item'>123 Wonderlust St., Denver, CO.</li>
                 </ul>
                 <ul className ='social-list'>

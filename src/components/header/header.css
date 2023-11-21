@@ -1,0 +1,122 @@
+.header-container {
+    position: fixed;
+    top: 0;
+    z-index: 10; /* Make sure the header is above other elements on the page */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #205084;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1),
+      0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1),
+      0px 16px 24px rgba(0, 0, 0, 0.1), 0px 24px 32px rgba(0, 0, 0, 0.1);
+  }
+  .menu-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    justify-content: space-between;
+  }
+  
+  .menu-list li {
+    margin-right: 6rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .menu-list li:hover {
+    color:gold;
+  }
+  
+  .link {
+    color: #f7f7f7;
+    font-weight: bold;
+  }
+  .header-logo {
+    cursor: pointer;
+  }
+  
+  .header-logo img {
+    height: 5rem;
+    margin-left: 15rem;
+  }
+
+  .menu-toggle {
+    display: none; /* Hide the menu icon by default */
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.menu-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+  nav {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    width: 100%;
+  }
+
+  .header-social {
+    margin-right: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between icons to your preference */
+    font-size: 2em; /* Set the font size to 2 times the default size */
+  }
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      padding: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 20px;
+    }
+  
+    .menu-toggle img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    nav.open {
+      transform: translateY(-100%);
+    }
+  
+    .menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .menu-list li {
+      margin-bottom: 10px;
+    }
+  
+    .link {
+      color: #007bff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+  
