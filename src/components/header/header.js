@@ -31,6 +31,7 @@ const Header = () => {
     { id: 2, label: "Contact Us", link: "/af2p/#/contactus" },
     { id: 3, label: "Adventure So Far", link: "/af2p/#/sofar" },
     { id: 4, label: "Future Plans", link: "/af2p/#/future" },
+    { id: 5, label: "Globe", link: "/af2p/#/globe"}
   ];
 
   return (

@@ -1,0 +1,20 @@
+.uc-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark blue background with semi-transparency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .uc-container {
+    background-color: #205084; /* Dark blue background */
+    border-radius: 2rem;
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0
+  }

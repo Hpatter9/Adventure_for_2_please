@@ -18,6 +18,7 @@ const Footer = ()=> {
                     <li className = 'site-item'><a href="#sofar" onClick={scrollToTop}>Adventures So Far</a></li>
                     <li className = 'site-item'><a href="#contactus" onClick={scrollToTop}>Contact Us</a></li>
                     <li className = 'site-item'><a href="#future" onClick={scrollToTop}>Future Plans</a></li>
+                    <li className = 'site-item'><a href="#globe" onClick={scrollToTop}>Globe</a></li>
                 </ul>
                 <ul className= 'contactus-list'>
                     <li className = 'contact-title'>Contact Us</li>

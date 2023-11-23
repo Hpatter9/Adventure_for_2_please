@@ -1,0 +1,25 @@
+.globe-container {
+    margin-top: 3rem;
+    display: grid; /* Changed from flex to grid */
+    grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
+    justify-items: center; /* Centers content horizontally in their respective grid cells */
+    align-items: center; /* Centers content vertically in their respective grid cells */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;    
+}
+.globe-text-container {
+    margin-top: 5rem;
+    width: 45rem;
+    grid-column: 1; /* Places this element in the first column */
+    background-color: #205084;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+.globe-text-container img {
+    display: block;
+    margin: auto;
+}
