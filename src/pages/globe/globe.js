@@ -3,13 +3,37 @@ import Globe from 'react-globe.gl';
 import './globe.css';
 import locationData from './locationdata';
 
+
 const GlobePage = () => {
   // eslint-disable-next-line no-unused-vars
   const [selectedPoint, setSelectedPoint] = useState(null);
+
   const locationInfoRef = useRef(null);
+
+  const calculateArcData = (selectedPoint) => {
+    const startLat = selectedPoint.arcstartlat;
+    const startLng = selectedPoint.arcstartlng;
+    const endLat = selectedPoint.arcendlat;
+    const endLng = selectedPoint.arcendlng;
+
+    const arcData = {
+      startLat,
+      startLng,
+      endLat,
+      endLng,
+      color: '#FF0000',
+      width: 2,
+    };
+
+    return arcData;
+  };
 
   const handlePointClick = (point) => {
     setSelectedPoint(point);
+
+    const arcData = calculateArcData(point);
+    setArcsData([arcData]);
+
     if (locationInfoRef.current) {
       // Clear existing content before updating
       locationInfoRef.current.innerHTML = '';
@@ -22,16 +46,26 @@ const GlobePage = () => {
       locationInfoRef.current.innerHTML += `<p>${detail}</p>`;
       // Dynamically add the image tag if imgs property exists
       if (imgs) {
-        locationInfoRef.current.innerHTML += `<img src=${imgs} style{width=1000 height=500} />`;
+        locationInfoRef.current.innerHTML += `<Image src=${imgs} style{"width=1000 height=500"} />`;
       }
     }
   };
+  // Initialize arc data with an empty array
+  const [arcsData, setArcsData] = useState([]);
 
   return (
     <div className='globe-container'>
       <div>
         <div className='globe-text-container'>
-          <p ref={locationInfoRef} style={{ fontWeight: 'bold' }}></p>
+          {/* Display default message if no point is selected */}
+          {selectedPoint === null ? (
+            <p style={{ fontWeight: 'bold', textAlign: 'center' }}>- Select a location to see where we've been! -
+            <h4 style={{ fontWeight: 'lighter', textAlign: 'center' }}>(click on Denver to follow our trail!)</h4>
+            </p>
+          ) : (
+            // Display location information when a point is selected
+            <p ref={locationInfoRef} style={{ fontWeight: 'bold' }}></p>
+          )}
         </div>
       </div>
       <Globe
@@ -41,12 +75,14 @@ const GlobePage = () => {
         backgroundImageUrl={"//unpkg.com/three-globe/example/img/night-sky.png"}
         pointColor={() => 'chartreuse'}
         pointAltitude={.01}
-        pointRadius={.5}
+        pointRadius={.2}
         pointsData={locationData}
-        onPointClick= {handlePointClick}
+        onPointClick={handlePointClick}
+        arcsData={arcsData}
       />
     </div>
   );
 };
+
 
 export default GlobePage;

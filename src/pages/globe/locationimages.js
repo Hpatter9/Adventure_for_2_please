@@ -1,7 +1,7 @@
 const LocationImages = {
     icelandImg : 'https://lh3.googleusercontent.com/pw/ADCreHdBKWA57PVnIzagS5HfcKhvnbcoC4faJBKGt7DUJvTqvSDawO_Q5-gZKDcLejzPvwqhTd0x-FtWhmgQc7MRWioPvnDl3EdafGVUX6Zflf8o75tLr0Kc=w2400',
     irelandImg : 'https://lh3.googleusercontent.com/pw/ADCreHfmvwyeZY5iO78oxURzG722wrJkj5BvKOtJbXUxNawvtDx5tjtVgwbrg8sDO25v5M9b38yal-OlazVQ0hTlZTjGcy2HM6kdj4-RX6jW5YTvA-I21npz=w2400',
-    denverImg : 'https://lh3.googleusercontent.com/pw/ADCreHc6-1uXUOnAc4psRIWYOMfsSu2bQZPbCebxbmetsu-7dQEqLm8zeFhN0Mu9ivY4SzauIP13vEX-rJU-17go05eaemeiVH1DDbMUgZF7_7FgJbJfI7v8=w2400',
+    denverImg : 'https://lh3.googleusercontent.com/pw/ADCreHdGaXJwyB19QwX-NGjhE3siteWNsK6XudKcm9Z2NFRTxW-GC5HT5-BofoGIzLvMjsbb4DWmgO1tE7rnXO4KatmBtmmg6kyRh8ePMO0VNRKqA9KB6qMm=w2400',
     edinburghImg : 'https://lh3.googleusercontent.com/pw/ADCreHdib_7E75T-g_ydmBKvn0e7CDxVxMiyzBS2NZHnKyl3-LC0a-hNtyDIRfkgFXyIuepE2-uFFcedi3yksw3FWhFm0LzO-Xp1HZJYplf-Qc1TO7q4F10x=w2400',
     londonImg : 'https://lh3.googleusercontent.com/pw/ADCreHewMREbBLRA_h2r7AxuUe2leAEb5z35up7jcTihBE5fVzU5vaAP2_dF31uzEluWrmLv9fe3Ezf6DUoCGF0kkzwA7H5zHOYsthwX8ZX8kOKPHKREJjxj=w2400',
     johanasburgImg : 'https://lh3.googleusercontent.com/pw/ADCreHebtlpnMcGVM48D1C8kbAO5x8Lny5Wc9sDW3TzXOY7xcPExe59yXJDWO5hcEFX6ANDlWB-tAi-6J3WiPAOtYKZYrx8hLxubh5MKCPT0adKBR9pGtPEw=w2400', 

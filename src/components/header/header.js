@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import menuicon from '../../assets/hamburger menu.svg';
 import { useNavigate } from "react-router-dom";
 import './header.css';
-import headerLogo from '../../assets/af2p-logo2.png';
+import headerLogo from '../../assets/af2plogo-white.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 
 const Header = () => {
 

@@ -19,7 +19,7 @@
 .footer-logo {
   grid-column: 1;
   grid-row: 1;
-  height: 15rem;
+  height: 10rem;
 }
 
 .sitenav-list, .contactus-list, .social-list {

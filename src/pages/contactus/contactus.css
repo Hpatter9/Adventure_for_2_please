@@ -4,7 +4,11 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* Adjust as needed */
-    background-color: #f4f4f4; /* Background color of the page */
+    background-color: #f2f2f2;; /* Background color of the page */
+}
+
+.contact-us h1 {
+    text-align: center; /* Center the header */
 }
 
 .contact-us form {
@@ -16,13 +20,17 @@
     color: white; /* Text color */
 }
 
+.contact-us form label {
+    display: block; /* Make the label a block element so it's on its own line */
+}
+
 .contact-us form input,
 .contact-us form textarea {
     width: 90%;
     padding: 1rem;
-    margin: 1rem 0; /* Vertical margin added */
+    margin: 0.5rem 0; /* Space out the inputs and labels */
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Slightly rounded corners on inputs */
 }
 
 .contact-us form button {
@@ -34,6 +42,9 @@
     cursor: pointer;
     border-radius: 5px;
     margin: 1rem 0; /* Vertical margin added */
+    display: block; /* Make the button a block element */
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto;
 }
 
 .success-message {

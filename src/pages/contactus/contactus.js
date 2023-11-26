@@ -44,26 +44,15 @@ const [phone, setPhone] = useState('');
       <h1>Contact Us</h1>
 
       <form onSubmit={handleSubmit}>
+        <p>Have any questions about our adventures, or just wanna chat or comment? Leave us a message and we'll get back to you!</p>
         <label>Name:</label>
         <input type="text" value={name} onChange={(event) => setName(event.target.value)} required />
-
         <label>Email:</label>
-
-        
-<input
- 
-type="email"
- 
-value={email}
- 
-onChange={(event) => setEmail(event.target.value)} required />
-
+        <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} required />
         <label>Phone:</label>
         <input type="tel" value={phone} onChange={(event) => setPhone(event.target.value)} />
-
         <label>Question or Comment:</label>
         <textarea value={questionOrComment} onChange={(event) => setQuestionOrComment(event.target.value)} required />
-
         <button type="submit">Submit</button>
       </form>
 
