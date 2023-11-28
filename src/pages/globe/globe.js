@@ -60,7 +60,7 @@ const GlobePage = () => {
           {/* Display default message if no point is selected */}
           {selectedPoint === null ? (
             <p style={{ fontWeight: 'bold', textAlign: 'center' }}>- Select a location to see where we've been! -
-            <h4 style={{ fontWeight: 'lighter', textAlign: 'center' }}>(click on Denver to follow our trail!)</h4>
+            <h4 style={{ fontWeight: 'lighter', textAlign: 'center' }}>(click on Denver-Homebase to follow our trail!)</h4>
             </p>
           ) : (
             // Display location information when a point is selected

@@ -3,7 +3,7 @@ const LocationImages = {
     irelandImg : 'https://lh3.googleusercontent.com/pw/ADCreHfmvwyeZY5iO78oxURzG722wrJkj5BvKOtJbXUxNawvtDx5tjtVgwbrg8sDO25v5M9b38yal-OlazVQ0hTlZTjGcy2HM6kdj4-RX6jW5YTvA-I21npz=w2400',
     denverImg : 'https://lh3.googleusercontent.com/pw/ADCreHdGaXJwyB19QwX-NGjhE3siteWNsK6XudKcm9Z2NFRTxW-GC5HT5-BofoGIzLvMjsbb4DWmgO1tE7rnXO4KatmBtmmg6kyRh8ePMO0VNRKqA9KB6qMm=w2400',
     edinburghImg : 'https://lh3.googleusercontent.com/pw/ADCreHdib_7E75T-g_ydmBKvn0e7CDxVxMiyzBS2NZHnKyl3-LC0a-hNtyDIRfkgFXyIuepE2-uFFcedi3yksw3FWhFm0LzO-Xp1HZJYplf-Qc1TO7q4F10x=w2400',
-    londonImg : 'https://lh3.googleusercontent.com/pw/ADCreHewMREbBLRA_h2r7AxuUe2leAEb5z35up7jcTihBE5fVzU5vaAP2_dF31uzEluWrmLv9fe3Ezf6DUoCGF0kkzwA7H5zHOYsthwX8ZX8kOKPHKREJjxj=w2400',
+    london2Img : 'https://lh3.googleusercontent.com/pw/ADCreHewMREbBLRA_h2r7AxuUe2leAEb5z35up7jcTihBE5fVzU5vaAP2_dF31uzEluWrmLv9fe3Ezf6DUoCGF0kkzwA7H5zHOYsthwX8ZX8kOKPHKREJjxj=w2400',
     johanasburgImg : 'https://lh3.googleusercontent.com/pw/ADCreHebtlpnMcGVM48D1C8kbAO5x8Lny5Wc9sDW3TzXOY7xcPExe59yXJDWO5hcEFX6ANDlWB-tAi-6J3WiPAOtYKZYrx8hLxubh5MKCPT0adKBR9pGtPEw=w2400', 
     capetownImg : 'https://lh3.googleusercontent.com/pw/ADCreHeeNjv8uKA33pyMF0GXJiwnpl6KPEUDnakziEMyHscLmcWCdUShHdirkfrlClY6gXjJL-w8nTdQWy1EC7RIojXQODEpK5ueh0jUSL6Z3BHZ8rq0UQ48=w2400',
     cologneImg : 'https://lh3.googleusercontent.com/pw/ADCreHfMTzhA09DGvkghKfGFeG5_Xl_9kEMmxbDiYjY-A101tkHmYxhDCR9Cg4VAhUTus_Y9i7Ma4tjMennkGdNmFUrCDT2q4muYCGqC9LZc9LNSsRVJusxi=w2400',
@@ -13,7 +13,7 @@ const LocationImages = {
     romeImg : 'https://lh3.googleusercontent.com/pw/ADCreHcquX3t1emdZRXY0qOnPMvkEiUSXuybdRIfbDjSiwqsFYoNqRVWiVXYXL9A6YrZYsnqmH2dGlztRcx9Z2SJ0OHs7JdojEM6bhEZdyXfIQZNtdNFxLi9=w2400',
     kualalumpurImg : 'https://lh3.googleusercontent.com/pw/ADCreHdT39SU1Rsfx6lpaRkRZgyEKG0T_RwoXFer_jA8gI0Iv7iKeqmE0a5HNQ_lr3nM-N5cH3lYtibH7pWDpxWG8dLu5UNWUUvRow0mqM_d1QsUnw1dFq9L=w2400',
     sanurImg : 'https://lh3.googleusercontent.com/pw/ADCreHf4E19VMhuwxQ-MEDcAE0RTd9MC1Lv9KFq4aIXxhqbq14A0-oKvIHFhfayyEq5tchH0e7fGEoWVpXwfP9BaOdeTeDb3tJpMQFTVXRAR_67QgoCUqqgb=w2400',
-    bangkokImg : 'https://lh3.googleusercontent.com/pw/ADCreHex_hN-73_Q9gNIvVdhRLaJxtnWE7zCcH5ch11n_YrdM3iNOvRwj4uQPkOkJ0cmwvoFr4z8EbJtlwYasHaWZ_UgT6YGmUZlkn3hyApxciJ9WJxPW0h7=w2400',
+    bangkok2Img : 'https://lh3.googleusercontent.com/pw/ADCreHex_hN-73_Q9gNIvVdhRLaJxtnWE7zCcH5ch11n_YrdM3iNOvRwj4uQPkOkJ0cmwvoFr4z8EbJtlwYasHaWZ_UgT6YGmUZlkn3hyApxciJ9WJxPW0h7=w2400',
     siemreapImg : 'https://lh3.googleusercontent.com/pw/ADCreHfi_uKpyVbLgf3ISSyZ8_6x25FrwTj_Dp58GwRHTyTMe8IJYodrz7yJ1zdwD0S04rf5clsC_HYXUeni-Zrba4aa5hZd1hD7Ddm1QBcAAf736dhQ-C-R=w2400',
     hochiminhImg : 'https://lh3.googleusercontent.com/pw/ADCreHe-WTS5DhtPVcWqsfrwXdHC_ufDVnAP4e68PwWduMaCgUsYrDvI8GsQZd8mGGWv0zdD_EWTbWdW6y4qRPsdhscNd4ZiOXjQaNveZsx5F6wz9rkNLrt3=w2400',
     clarkImg : 'https://lh3.googleusercontent.com/pw/ADCreHe51JQPtG6dcr_NjqAjXLdoA3OtgQHIzCF5BUOYuGx9mGbAE-lbLqrbfnnROxRnA9uTbHqTeM9S32swuZIQNdjDpLup-yETy1CjPoHeUeUkfE5Hzmt9=w2400',
@@ -37,6 +37,15 @@ const LocationImages = {
     majorcaImg : 'https://lh3.googleusercontent.com/pw/ADCreHfAE_vbsGbuRHt90x-X2J7CI8WW95alRdVZstvFVRGZoQ0W3mG74pJc2DlOnPAk3r0ntmFDLOZrI9iPcWIjOPLBw3xfJ6k-Pbt0_S9muBNHi3fPtaUg=w2400',
     tangierImg: 'https://lh3.googleusercontent.com/pw/ADCreHdEdyHIhSWD4ZeXs06dW6ZZfWCEbQAFvInOfwoSXLEi4XwjRee6FsHcF976h1lBz7DiA4bQJkZW9nG6qzT2sKUWExFSZXrW9p_zRcEHw6By7VY8vluA=w2400',
     carvoeiroImg : 'https://lh3.googleusercontent.com/pw/ADCreHcKXFh4kKcu5CYp6IDoxXOVVCeavqphbEHJHYTaeXIfuSrVojItylcgiQAipZdMthzAaTNyC707F09DsZaFUnBxhczj-RQbKjkmnQtEluSP-X_9pDW2=w2400',
+    mediteranianCruiseImg : 'https://lh3.googleusercontent.com/pw/ADCreHfXFm2PGu12jhrS6EAX-wc0oQVCIH3sEdsJq9NqdXxFc6ONfE5NcCDmq1F-xW3NaJgbD4bBsDuwxDUVUuC-5Tbc1_31Pxon70kHTR6Rz8fXZPplVW1G=w2400',
+    denver2Img: 'https://lh3.googleusercontent.com/pw/ADCreHeiQbhPqgowHdGGTLYvkCwiy51TXnk8O-10eGZttI6SYbs8gWEpyA16cifY314LUZWTVVWdHbEZb1DbJTDrnHOfx2BNUDwDuRk_N4NUex4ug_4-ilDb=w2400',
+    londonImg: 'https://lh3.googleusercontent.com/pw/ADCreHdE6MVNnAt-S6HIbo5xkudtm5GbC-ZDLsDj8VmqBfbXLnXy8P_PC3BOzHtQ6nX7cJx6qZB4pT-kb2roS0ie3T0h9NO_al7zoN8GpD9tXiQ0VoxQr2Yd=w2400',
+    bangkokImg: 'https://lh3.googleusercontent.com/pw/ADCreHdgKdq1NjCKEPt1g908Zj6foLWSfXlwXPK1bpJndfN4VP20yBY5juoD1YPzjNPyli_u7MUgz0HUSGbjrYFK9MXOYurbctDWCtq7Gn7Af7OEYMxfjvH-=w2400',
+    cangguImg: 'https://lh3.googleusercontent.com/pw/ADCreHfkbt9rq3lGI1MCUaV3ri4LwrPPNBBPyqjqowm95i6KA7EBuI2OzQhrBdI3w9KFCmeR2xR7wP4UouqrLq3zcg1SPE9QtNNj4tF2zd0SIxmpKpN5iV_5=w2400',
+    seminyakImg: 'https://lh3.googleusercontent.com/pw/ADCreHdUwIekDx5lZ2EDs7SOx2aTzVef1PzOKvjBP3_RXbdG-8yeRBQhUt0yJYGkTBFe_HUPo6yD_gFGWojHj_DUBCnKHxMWql2K3Yy3tOis4gUgYYB8mTal=w2400',
+    cologne2Img: 'https://lh3.googleusercontent.com/pw/ADCreHdDxXdUNohGLbjRrhscwrf3LL83cndUOEvgb84f7vpRTlgH1q2qpAAj-vgqRaXrKAdBPrkbD-YP1VXn2dQtEgORUFPpKxGjyFGYvrnxeY0dXUuo4bgW=w2400',
+    
+
 };
 
 export default LocationImages;
