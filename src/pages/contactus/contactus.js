@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './contactus.css';
 
+
+
 const ContactUs = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -11,9 +13,8 @@ const [phone, setPhone] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    // Send the form data to the server
-    fetch('/api/contact', {
+  
+    fetch('http://localhost:3001/contactus', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -25,23 +26,26 @@ const [phone, setPhone] = useState('');
         questionOrComment,
       }),
     })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.success) {
-          setSubmitted(true);
-          setName('');
-          setEmail('');
-          setPhone('');
-          setQuestionOrComment('');
-        } else {
-          alert('Error submitting form');
-        }
-      });
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.id) {
+        setSubmitted(true);
+        setName('');
+        setEmail('');
+        setPhone('');
+        setQuestionOrComment('');
+
+      } else {
+        alert('Error submitting form');
+      }
+    });
+    
   };
+
 
   return (
     <div className="contact-us">
-      <h1>Contact Us</h1>
+      <h3>Let us here from you</h3>
 
       <form onSubmit={handleSubmit}>
         <p>Have any questions about our adventures, or just wanna chat or comment? Leave us a message and we'll get back to you!</p>

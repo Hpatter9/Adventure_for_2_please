@@ -7,9 +7,7 @@
     padding-top: 5em;
     width: 100%;
     margin: 0 auto; /* Center the container horizontally */
-    margin-bottom: .5rem;
-    padding-bottom: 5rem;
-    border-bottom: 1px solid #205084;
+    padding-bottom: 1rem;
   }
   
   .about-background {
@@ -21,7 +19,6 @@
   }
   
   .about-header {
-    font-family: sans-serif; /* Choose a modern sans-serif font */
     font-size: 2rem;
     font-weight: bold;
     text-align: center;

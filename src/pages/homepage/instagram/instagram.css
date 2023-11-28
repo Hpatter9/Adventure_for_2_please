@@ -1,0 +1,48 @@
+.instagram-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #f2f2f2;
+  padding-bottom: 2rem;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid #205084;
+}
+
+.instagram-background {
+  color: white;
+  width: 500px;
+  height: auto;
+  background-color: #205084;
+  padding: 20px;
+  border-radius: 10px;
+}
+.instagram-background img {
+  opacity: 0.5; /* Maintain the opacity of the image */
+  position: absolute;
+  z-index: 0;
+  width: 10%;
+  height: auto;
+}
+
+.instagram-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.instagram-content {
+  text-align: center;
+}
+
+.instagram-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.instagram-button:hover {
+  background-color: #686b6e;
+}

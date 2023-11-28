@@ -28,7 +28,8 @@ const RandomPic = () => {
     return (
         <div className="randompic-container">
             <div className='randompic-background'>
-                <h1 className='randompic-header'>Random photos from our Journey</h1>
+                <h2 className='randompic-header'>Random photos from our Journey </h2>
+                <h4>(Click to change)</h4>
                 <img src={imageUrl} alt="Pic that changes Daily" onClick={handleImageClick} />
             </div>
         </div>

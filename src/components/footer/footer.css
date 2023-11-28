@@ -19,7 +19,7 @@
 .footer-logo {
   grid-column: 1;
   grid-row: 1;
-  height: 10rem;
+  height: 15rem;
 }
 
 .sitenav-list, .contactus-list, .social-list {
@@ -28,7 +28,9 @@
   margin: 0;
   text-decoration: none;
   color:#f2f2f2;
-
+}
+.sitenav-list li, .contactus-list li, .social-list li {
+  margin-bottom: 1rem; /* Increase the margin-bottom to 10px for more vertical spacing */
 }
 
 .sitenav-title, .contact-title, .social-title {

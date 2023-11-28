@@ -1,0 +1,98 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "contactus": [
+    {
+      "name": "Hunter Patterson",
+      "email": "hpatter9@gmail.com",
+      "phone": "15039109766",
+      "questionOrComment": "hi",
+      "id": 1
+    },
+    {
+      "name": "Hunter Patterson",
+      "email": "hpatter9@gmail.com",
+      "phone": "15039109766",
+      "questionOrComment": "123",
+      "id": 2
+    },
+    {
+      "name": "Hunter Patterson",
+      "email": "hpatter9@gmail.com",
+      "phone": "15039109766",
+      "questionOrComment": "123",
+      "id": 3
+    },
+    {
+      "name": "Marlys j woods",
+      "email": "hpatter9@gmail.com",
+      "phone": "5039109766",
+      "questionOrComment": "asd",
+      "id": 4
+    },
+    {
+      "name": "Marlys j woods",
+      "email": "hpatter9@gmail.com",
+      "phone": "5039109766",
+      "questionOrComment": "asd",
+      "id": 5
+    },
+    {
+      "name": "Hunter Patterson",
+      "email": "hpatter9@gmail.com",
+      "phone": "15039109766",
+      "questionOrComment": "asd",
+      "id": 6
+    },
+    {
+      "name": "Hunter Patterson",
+      "email": "hpatter9@gmail.com",
+      "phone": "15039109766",
+      "questionOrComment": "asd",
+      "id": 7
+    },
+    {
+      "name": "Hunter Patterson",
+      "email": "hpatter9@gmail.com",
+      "phone": "15039109766",
+      "questionOrComment": "this one works?",
+      "id": 8
+    },
+    {
+      "name": "Hunter Patterson",
+      "email": "hpatter9@gmail.com",
+      "phone": "15039109766",
+      "questionOrComment": "overlay working?",
+      "id": 9
+    },
+    {
+      "name": "Hunter Patterson",
+      "email": "hpatter9@gmail.com",
+      "phone": "15039109766",
+      "questionOrComment": "asd",
+      "id": 10
+    },
+    {
+      "name": "Hunter Patterson",
+      "email": "hpatter9@gmail.com",
+      "phone": "15039109766",
+      "questionOrComment": "asd",
+      "id": 11
+    }
+  ]
+}

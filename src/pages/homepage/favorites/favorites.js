@@ -8,6 +8,8 @@ import cambodiafav from './favoriteimgs/cambodia.jpg';
 import balifav from './favoriteimgs/bali.jpg';
 import travelfav from './favoriteimgs/train.jpg';
 import safarifav from './favoriteimgs/safari.jpg';
+import ottersfav from './favoriteimgs/otter.jpg';
+import puppiesfav from './favoriteimgs/puppies.jpg';
 
 const favorites = [
   {
@@ -44,6 +46,15 @@ const favorites = [
     title: "Favorite Day We've Had Together",
     description: "Picking one day is really hard... But for us it would be a day in Bali going to a couple waterfalls.  They we Grogeous! And we were with some fun people!",
     image: balifav,
+  },
+  {
+    title: "Favorite Pet We Met",
+    description: "The otters in Bali! They were so cute and fun to watch!",
+    image: ottersfav,
+  },  {
+    title: "Favorite Wild Animals",
+    description: "The Pack of puppies we that joined us on a 2 hr hike in Bansko!! Not sure if this counts, but they came to us in the wild. ",
+    image: puppiesfav,
   },
 ];
 
