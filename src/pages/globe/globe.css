@@ -22,9 +22,11 @@
     }
 
     .globe-text-container {
+        background-color: #205084;
         font-size: 10px;
+        padding: 10px;
         width: 90%;
-        height: 20%;
+        height: auto;
         left:20px;
         bottom: 0px;
     }
