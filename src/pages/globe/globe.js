@@ -28,6 +28,8 @@ const GlobePage = () => {
     return arcData;
   };
 
+
+
   const handlePointClick = (point) => {
     setSelectedPoint(point);
 
@@ -36,17 +38,17 @@ const GlobePage = () => {
 
     if (locationInfoRef.current) {
       locationInfoRef.current.innerHTML = '';
-
+    
       const { name, date, detail, imgs } = point;
-
+    
       locationInfoRef.current.innerHTML += `<p style="font-size: 30px; text-align: center;">${name}</p>`;
       locationInfoRef.current.innerHTML += `<p>${date}</p>`;
       locationInfoRef.current.innerHTML += `<p>${detail}</p>`;
       if (imgs) {
         locationInfoRef.current.innerHTML += `<Image src=${imgs} style{"width=1000 height=500"} />`;
       }
-      
-      setShowTextContainer(true)
+    
+      setShowTextContainer(true);
     }
   };
 
@@ -80,7 +82,7 @@ const GlobePage = () => {
         backgroundImageUrl='//unpkg.com/three-globe/example/img/night-sky.png'
         pointColor={() => 'chartreuse'}
         pointAltitude={0.01}
-        pointRadius={.6}
+        pointRadius={.3}
         pointsData={locationData}
         onPointClick={handlePointClick}
         arcsData={arcsData}
