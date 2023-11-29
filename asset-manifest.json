@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Adventure_for_2_please/static/css/main.0ce53b3b.css",
-    "main.js": "/Adventure_for_2_please/static/js/main.0cfcc5f8.js",
-    "static/js/787.32ddb112.chunk.js": "/Adventure_for_2_please/static/js/787.32ddb112.chunk.js",
-    "static/media/safari.jpg": "/Adventure_for_2_please/static/media/safari.43003896faa8b128b0db.jpg",
-    "static/media/train.jpg": "/Adventure_for_2_please/static/media/train.3ad794a849358016c759.jpg",
-    "static/media/iceland.jpg": "/Adventure_for_2_please/static/media/iceland.69b4dd1203addd64560c.jpg",
-    "static/media/puppies.jpg": "/Adventure_for_2_please/static/media/puppies.5f17a21a04088d1fc9bd.jpg",
-    "static/media/cambodia.jpg": "/Adventure_for_2_please/static/media/cambodia.0142e327e0a6ab1cb4c9.jpg",
-    "static/media/bali.jpg": "/Adventure_for_2_please/static/media/bali.f61a126a0ae0db76f949.jpg",
-    "static/media/elnido.jpg": "/Adventure_for_2_please/static/media/elnido.cb543a00670ddc57a3d3.jpg",
-    "static/media/af2p-logo2-blue-large.png": "/Adventure_for_2_please/static/media/af2p-logo2-blue-large.f5a9408bab4053cf378f.png",
-    "static/media/hoian.jpg": "/Adventure_for_2_please/static/media/hoian.da1239db7de547c854d4.jpg",
-    "static/media/otter.jpg": "/Adventure_for_2_please/static/media/otter.3320fc0e22ace79dbddf.jpg",
-    "static/media/af2p-logo2.png": "/Adventure_for_2_please/static/media/af2p-logo2.f817cceb90c1ce79edcc.png",
-    "index.html": "/Adventure_for_2_please/index.html",
-    "static/media/hamburger menu.svg": "/Adventure_for_2_please/static/media/hamburger menu.2cba90d9a2294d6ec4901bf28d25c693.svg",
-    "main.0ce53b3b.css.map": "/Adventure_for_2_please/static/css/main.0ce53b3b.css.map",
-    "main.0cfcc5f8.js.map": "/Adventure_for_2_please/static/js/main.0cfcc5f8.js.map",
-    "787.32ddb112.chunk.js.map": "/Adventure_for_2_please/static/js/787.32ddb112.chunk.js.map"
+    "main.css": "/af2p/static/css/main.0ce53b3b.css",
+    "main.js": "/af2p/static/js/main.28772212.js",
+    "static/js/787.32ddb112.chunk.js": "/af2p/static/js/787.32ddb112.chunk.js",
+    "static/media/safari.jpg": "/af2p/static/media/safari.43003896faa8b128b0db.jpg",
+    "static/media/train.jpg": "/af2p/static/media/train.3ad794a849358016c759.jpg",
+    "static/media/iceland.jpg": "/af2p/static/media/iceland.69b4dd1203addd64560c.jpg",
+    "static/media/puppies.jpg": "/af2p/static/media/puppies.5f17a21a04088d1fc9bd.jpg",
+    "static/media/cambodia.jpg": "/af2p/static/media/cambodia.0142e327e0a6ab1cb4c9.jpg",
+    "static/media/bali.jpg": "/af2p/static/media/bali.f61a126a0ae0db76f949.jpg",
+    "static/media/elnido.jpg": "/af2p/static/media/elnido.cb543a00670ddc57a3d3.jpg",
+    "static/media/af2p-logo2-blue-large.png": "/af2p/static/media/af2p-logo2-blue-large.f5a9408bab4053cf378f.png",
+    "static/media/hoian.jpg": "/af2p/static/media/hoian.da1239db7de547c854d4.jpg",
+    "static/media/otter.jpg": "/af2p/static/media/otter.3320fc0e22ace79dbddf.jpg",
+    "static/media/af2p-logo2.png": "/af2p/static/media/af2p-logo2.f817cceb90c1ce79edcc.png",
+    "static/media/hamburger menu.svg": "/af2p/static/media/hamburger menu.2cba90d9a2294d6ec4901bf28d25c693.svg",
+    "index.html": "/af2p/index.html",
+    "main.0ce53b3b.css.map": "/af2p/static/css/main.0ce53b3b.css.map",
+    "main.28772212.js.map": "/af2p/static/js/main.28772212.js.map",
+    "787.32ddb112.chunk.js.map": "/af2p/static/js/787.32ddb112.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ce53b3b.css",
-    "static/js/main.0cfcc5f8.js"
+    "static/js/main.28772212.js"
   ]
 }
