@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Adventure_for_2_please/static/css/main.0ce53b3b.css",
+    "main.css": "/Adventure_for_2_please/static/css/main.6f593dcf.css",
     "main.js": "/Adventure_for_2_please/static/js/main.35ee5024.js",
     "static/js/787.32ddb112.chunk.js": "/Adventure_for_2_please/static/js/787.32ddb112.chunk.js",
     "static/media/safari.jpg": "/Adventure_for_2_please/static/media/safari.43003896faa8b128b0db.jpg",
@@ -13,15 +13,16 @@
     "static/media/af2p-logo2-blue-large.png": "/Adventure_for_2_please/static/media/af2p-logo2-blue-large.f5a9408bab4053cf378f.png",
     "static/media/hoian.jpg": "/Adventure_for_2_please/static/media/hoian.da1239db7de547c854d4.jpg",
     "static/media/otter.jpg": "/Adventure_for_2_please/static/media/otter.3320fc0e22ace79dbddf.jpg",
+    "static/media/Ephesis-Regular.ttf": "/Adventure_for_2_please/static/media/Ephesis-Regular.9d76794a944a1f234087.ttf",
     "static/media/af2p-logo2.png": "/Adventure_for_2_please/static/media/af2p-logo2.f817cceb90c1ce79edcc.png",
     "index.html": "/Adventure_for_2_please/index.html",
     "static/media/hamburger menu.svg": "/Adventure_for_2_please/static/media/hamburger menu.2cba90d9a2294d6ec4901bf28d25c693.svg",
-    "main.0ce53b3b.css.map": "/Adventure_for_2_please/static/css/main.0ce53b3b.css.map",
+    "main.6f593dcf.css.map": "/Adventure_for_2_please/static/css/main.6f593dcf.css.map",
     "main.35ee5024.js.map": "/Adventure_for_2_please/static/js/main.35ee5024.js.map",
     "787.32ddb112.chunk.js.map": "/Adventure_for_2_please/static/js/787.32ddb112.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ce53b3b.css",
+    "static/css/main.6f593dcf.css",
     "static/js/main.35ee5024.js"
   ]
 }
