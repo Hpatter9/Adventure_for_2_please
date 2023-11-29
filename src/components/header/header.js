@@ -28,11 +28,11 @@ const Header = () => {
   };
 
   const menuItems = [
-    { id: 1, label: "Home", link: "/af2p/#/" },
-    { id: 5, label: "Globe", link: "/af2p/#/globe"},
-    { id: 4, label: "Future Plans", link: "/af2p/#/future" },
-    { id: 3, label: "Adventure So Far", link: "/af2p/#/sofar" },
-    { id: 2, label: "Contact Us", link: "/af2p/#/contactus" },
+    { id: 1, label: "Home", link: "/Adventure_for_2_please/#/" },
+    { id: 5, label: "Globe", link: "/Adventure_for_2_please/#/globe"},
+    { id: 4, label: "Future Plans", link: "/Adventure_for_2_please/#/future" },
+    { id: 3, label: "Adventure So Far", link: "/Adventure_for_2_please/#/sofar" },
+    { id: 2, label: "Contact Us", link: "/Adventure_for_2_please/#/contactus" },
   ];
 
   return (

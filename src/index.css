@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Ephesis';
+  src: url('../public/Ephesis-Regular.ttf');
+}
+
 body {
   background-color: #f2f2f2;
   margin: 0;
