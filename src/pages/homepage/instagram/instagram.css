@@ -19,7 +19,7 @@
   border-radius: 10px;
 }
 .instagram-background img {
-  opacity: 0.5; /* Maintain the opacity of the image */
+  opacity: 0.5;
   position: absolute;
   z-index: 0;
   width: 10%;
@@ -46,3 +46,42 @@
 .instagram-button:hover {
   background-color: #686b6e;
 }
+
+/* Responsive Instagram CSS */
+
+@media (max-width: 768px) {
+  .instagram-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instagram-background {
+    width: 95%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .instagram-background img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .instagram-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .instagram-title {
+    margin-bottom: 20px;
+  }
+
+  .instagram-content {
+    display: inline-block;
+  }
+
+  .instagram-button {
+    margin-left: 10px;
+  }
+}
+

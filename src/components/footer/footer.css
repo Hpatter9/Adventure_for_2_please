@@ -3,7 +3,7 @@
   background-color: #205084;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  display: grid; /* Add this to make the footer a grid container */
+  display: grid;
 }
 
 .footer-background {
@@ -30,7 +30,7 @@
   color:#f2f2f2;
 }
 .sitenav-list li, .contactus-list li, .social-list li {
-  margin-bottom: 1rem; /* Increase the margin-bottom to 10px for more vertical spacing */
+  margin-bottom: 1rem;
 }
 
 .sitenav-title, .contact-title, .social-title {
@@ -50,11 +50,40 @@ a {
 
 .footer-copy {
   grid-column: span 3;
-  grid-row: 3; /* Change this to 3 to position it below other footer elements */
+  grid-row: 3;
   text-align: center;
   font-size: 12px;
   color: #f2f2f2;
   padding-bottom: 20px;
   margin: 0 auto;
-  align-self: end; /* Add this to align the item to the end of the grid area */
+  align-self: end;
+}
+
+/* Responsive footer CSS */
+
+@media (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sitenav-list, .contactus-list, .social-list {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sitenav-list li, .contactus-list li, .social-list li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .footer-copy {
+    text-align: center;
+  }
 }

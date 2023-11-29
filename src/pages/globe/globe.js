@@ -3,7 +3,6 @@ import Globe from 'react-globe.gl';
 import './globe.css';
 import locationData from './locationdata';
 
-
 const GlobePage = () => {
   // eslint-disable-next-line no-unused-vars
   const [selectedPoint, setSelectedPoint] = useState(null);
@@ -50,6 +49,7 @@ const GlobePage = () => {
       }
     }
   };
+
   // Initialize arc data with an empty array
   const [arcsData, setArcsData] = useState([]);
 
@@ -59,8 +59,11 @@ const GlobePage = () => {
         <div className='globe-text-container'>
           {/* Display default message if no point is selected */}
           {selectedPoint === null ? (
-            <p style={{ fontWeight: 'bold', textAlign: 'center' }}>- Select a location to see where we've been! -
-            <h4 style={{ fontWeight: 'lighter', textAlign: 'center' }}>(click on Denver-Homebase to follow our trail!)</h4>
+            <p style={{ fontWeight: 'bold', textAlign: 'center' }}>
+              - Select a location to see where we've been! -
+              <h4
+                style={{ fontWeight: 'lighter', textAlign: 'center' }}
+              >(click on Denver-Homebase to follow our trail!)</h4>
             </p>
           ) : (
             // Display location information when a point is selected
@@ -69,13 +72,13 @@ const GlobePage = () => {
         </div>
       </div>
       <Globe
-        width={1000}
-        globeImageUrl={"//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"}
-        bumbImageUrl={"//unpkg.com/three-globe/example/img/earth-topology.png"}
-        backgroundImageUrl={"//unpkg.com/three-globe/example/img/night-sky.png"}
+        width='100%'
+        globeImageUrl='//unpkg.com/three-globe/example/img/earth-blue-marble.jpg'
+        bumbImageUrl='//unpkg.com/three-globe/example/img/earth-topology.png'
+        backgroundImageUrl='//unpkg.com/three-globe/example/img/night-sky.png'
         pointColor={() => 'chartreuse'}
-        pointAltitude={.01}
-        pointRadius={.2}
+        pointAltitude={0.01}
+        pointRadius={0.2}
         pointsData={locationData}
         onPointClick={handlePointClick}
         arcsData={arcsData}
@@ -84,5 +87,5 @@ const GlobePage = () => {
   );
 };
 
-
 export default GlobePage;
+

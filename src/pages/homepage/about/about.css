@@ -6,7 +6,7 @@
     background-color: #f2f2f2;
     padding-top: 5em;
     width: 100%;
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 0 auto;
     padding-bottom: 1rem;
   }
   
@@ -24,19 +24,19 @@
     text-align: center;
     padding-bottom: 1rem;
     margin-bottom: .5rem;
-    border-bottom: .10rem solid white; /* Add a white line under the header */
+    border-bottom: .10rem solid white;
 }
 
 .about-text {
-    font-family: sans-serif; /* Choose a modern sans-serif font */
+    font-family: sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     text-align: justify;
     margin-bottom: 20px;
-    border-top: 10px solid white; /* Add a white line over the main body of text */
+    border-top: 10px solid white;
 }
   .about-text p {
-    margin-bottom: 10px; /* Reduce margin between paragraphs */
+    margin-bottom: 10px;
   }
   
   .about-img-container {
@@ -65,4 +65,79 @@
 
 .about-img:nth-child(even) {
     top: 20px;
+}
+
+/* Responsive About Us CSS */
+
+@media (max-width: 768px) {
+  .about-container {
+    padding-top: 1em;
+  }
+  .about-background {
+    width: 95%;
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  .about-header {
+    margin: auto;
+    width: 80%;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .about-text {
+    margin: auto;
+    width: 80%;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .about-img-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+  }
+
+  .about-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+  }
+  
+  .about-img:nth-child(2),
+  .about-img:nth-child(3),
+  .about-img:nth-child(4) {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+  }
+  
+  .about-img:nth-child(2) {
+    top: -30px;
+    left: 45px
+  }
+  
+  .about-img:nth-child(4) {
+    top: 30px;
+    left: -45px;
+  }
+  .about-img:nth-child(5),
+  .about-img:nth-child(1) {
+    display: none;
+  }
 }

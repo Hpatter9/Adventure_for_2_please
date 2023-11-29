@@ -1,124 +1,121 @@
 .header-container {
-    position: fixed;
-    top: 0;
-    z-index: 10; /* Make sure the header is above other elements on the page */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height:3%;
-    margin: 0 auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #205084;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1),
-      0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1),
-      0px 16px 24px rgba(0, 0, 0, 0.1), 0px 24px 32px rgba(0, 0, 0, 0.1);
-  }
-  .menu-list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    justify-content: space-between;
-  }
-  
-  .menu-list li {
-    font-size: 1rem;
-    margin-right: 6rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #205084;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1),
+    0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1),
+    0px 16px 24px rgba(0, 0, 0, 0.1), 0px 24px 32px rgba(0, 0, 0, 0.1);
+}
 
-  .menu-list li:hover {
-    color:gold;
-  }
-  
-  .link {
-    color: #f7f7f7;
-    font-weight: bold;
-  }
-  .header-logo {
-    cursor: pointer;
-  }
-  
-  .header-logo img {
-    height: 3rem;
-    margin-left: 15rem;
-  }
+.menu-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  justify-content: space-between;
+}
 
-  .menu-toggle {
-    display: none; /* Hide the menu icon by default */
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 20px;
+.menu-list li {
+  font-size: 1rem;
+  margin-right: 6rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu-list li:hover {
+  color: gold;
+}
+
+.link {
+  color: #f7f7f7;
+  font-weight: bold;
+}
+
+.header-logo {
+  cursor: pointer;
+}
+
+.header-logo img {
+  height: 3rem;
+  margin: auto;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 10px;
 }
 
 .menu-toggle img {
-    width: 30px;
-    height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
-  nav {
-    display: flex;
-    justify-content: center; /* Center the navigation items */
-    width: 100%;
+.header-social {
+  margin-right: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+ 
+  .nav {
+    display: none;
   }
 
-  .header-social {
-    margin-right: 10rem;
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav.open {
     display: flex;
-    align-items: center;
-    gap: 20px; /* Adjust the gap between icons to your preference */
-    font-size: 2em; /* Set the font size to 2 times the default size */
+    flex-direction: column;
+    position: fixed;
+    top: 5.3rem;
+    width: 50%;
+    height: 24%;
+    background-color: #fff;
+    z-index: 1;
+    right: 0;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
+      0 6px 6px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.1);
   }
-  @media (max-width: 768px) {
-    nav {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: #ffffff;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      z-index: 1;
-      padding: 20px;
-      transition: transform 0.3s ease-in-out;
-    }
-  
-    .menu-toggle {
-      display: block;
-      cursor: pointer;
-      position: absolute;
-      top: 0;
-      right: 20px;
-    }
-  
-    .menu-toggle img {
-      width: 30px;
-      height: 30px;
-    }
-  
-    nav.open {
-      transform: translateY(-100%);
-    }
-  
-    .menu-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-  
-    .menu-list li {
-      margin-bottom: 10px;
-    }
-  
-    .link {
-      color: #007bff;
-      font-weight: bold;
-      text-decoration: none;
-    }
+
+  .menu-list {
+    display: flex;;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
-  
+
+  .menu-list li {
+    padding: 10px;
+    border-bottom: none;
+    margin-right: 0;
+  }
+
+  .menu-list li a {
+    text-decoration: none;
+    color: #333;
+  }
+  .header-social {
+    display: none;
+  }
+}

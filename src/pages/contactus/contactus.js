@@ -45,7 +45,7 @@ const [phone, setPhone] = useState('');
 
   return (
     <div className="contact-us">
-      <h3>Let us here from you</h3>
+      <h1>Let us here from you</h1>
 
       <form onSubmit={handleSubmit}>
         <p>Have any questions about our adventures, or just wanna chat or comment? Leave us a message and we'll get back to you!</p>

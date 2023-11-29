@@ -23,17 +23,39 @@
     color: grey;
     font-style: italic;
 }
+.favorites-container {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  overflow-x: hidden;
+  white-space: nowrap;
+  margin: 0 -1rem;
+  touch-action: pan-x;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .favorites-section {
+    padding-bottom: 1rem;
+  }
+
+  .favorites-section h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .favorites-section h4 {
+    font-size: 0.9rem;
+  }
 
   .favorites-container {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    height: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    overflow-x: hidden;
-    white-space: nowrap;
-    margin: 0 -1rem;
-    touch-action: pan-x;
-    user-select: none;
+    overflow-x: auto;
+    width: 90%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
   }
+}

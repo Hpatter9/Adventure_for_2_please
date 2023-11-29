@@ -28,8 +28,8 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 
                 4px 4px 8px rgba(0, 0, 0, 0.4), 
                 6px 6px 12px rgba(0, 0, 0, 0.3);
-  bottom: 23rem; /* position the text at the top */
-  left: 10rem; /* position the text on the left */
+  bottom: 23rem;
+  left: 10rem;
 }
 
 .hero-text2 {
@@ -39,6 +39,28 @@
    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 
                 4px 4px 8px rgba(0, 0, 0, 0.4), 
                 6px 6px 12px rgba(0, 0, 0, 0.3);
-  bottom: 14rem; /* position the text at the top */
-  left: 20rem; /* position the text on the left */
+  bottom: 14rem;
+  left: 20rem;
+}
+@media (max-width: 768px) {
+
+  .hero-container {
+    height: 50%;
+  }
+
+  .hero-text1, .hero-text2 {
+    font-size: 3rem;
+    bottom: auto;
+    left: 1rem;
+    right: 1rem;
+    text-align: center;
+  }
+
+  .hero-text1 {
+    top: 50%;
+  }
+
+  .hero-text2 {
+    top: 60%;
+  }
 }

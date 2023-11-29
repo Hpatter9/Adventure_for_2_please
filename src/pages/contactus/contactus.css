@@ -7,9 +7,9 @@
     background-color: #f2f2f2;; /* Background color of the page */
 }
 
-.contact-us h3 {
+.contact-us h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .contact-us form {
@@ -65,4 +65,51 @@
       0px 30px 40px rgba(0, 0, 0, 0.1),
        0px 40px 50px rgba(0, 0, 0, 0.1);
     border: 2px solid white;
+  }
+  @media (max-width: 768px) {
+    .contact-us {
+      width: 95%;
+      margin: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  
+    .contact-us h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+  
+    .contact-us form {
+      width: 85%;
+    }
+  
+    .contact-us label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  
+    .contact-us input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+  
+    .contact-us button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #205084;
+      color: white;
+      cursor: pointer;
+    }
+  
+    .success-message {
+        width: 60%;
+        height: auto;
+      }
+  
+    .success-message p {
+      margin-bottom: 10px;
+    }
   }

@@ -18,7 +18,7 @@ const About = () => {
                     <p>So, we packed our bags, bid farewell to our familiar surroundings, and set out on a journey filled with uncertainty and excitement. We've hiked through lush rainforests, marveled at ancient ruins, and immersed ourselves in vibrant cultures. Each step has been a learning experience, opening our eyes to the beauty and wonder that surrounds us.</p>
                     <p>Along the way, we've shared our experiences with others through our social media handle, Adventurefor2please. We've connected with fellow travelers from all corners of the globe, sharing tips, stories, and encouragement. We hope that our adventures inspire others to chase their dreams and discover the world's hidden gems.</p>
                     <p>Our journey is far from over, and we're eager to see what new adventures await us. We invite you to join us on our journey as we explore the world, one destination at a time. Together, we can prove that adventure isn't just for the young and carefree; it's for anyone who dares to dream and explore.</p>
-                    <p>Adventurefor2please: Where life is a journey, and every moment is an adventure waiting to happen.</p>
+                    <p>Adventurefor2please: Where life is a journey, and every moment is an adventure waiting to happen!</p>
                 </div>
                 <div className='about-img-container'>
                     <img className='about-img' src={aboutImg1} alt='about pic1'/>
