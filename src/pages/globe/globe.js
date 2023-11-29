@@ -4,6 +4,7 @@ import './globe.css';
 import locationData from './locationdata';
 
 const GlobePage = () => {
+  const [showTextContainer, setShowTextContainer] = useState(true);
   // eslint-disable-next-line no-unused-vars
   const [selectedPoint, setSelectedPoint] = useState(null);
 
@@ -34,33 +35,35 @@ const GlobePage = () => {
     setArcsData([arcData]);
 
     if (locationInfoRef.current) {
-      // Clear existing content before updating
       locationInfoRef.current.innerHTML = '';
 
       const { name, date, detail, imgs } = point;
 
-      // Enclose each item in a separate <p> element
       locationInfoRef.current.innerHTML += `<p style="font-size: 30px; text-align: center;">${name}</p>`;
       locationInfoRef.current.innerHTML += `<p>${date}</p>`;
       locationInfoRef.current.innerHTML += `<p>${detail}</p>`;
-      // Dynamically add the image tag if imgs property exists
       if (imgs) {
         locationInfoRef.current.innerHTML += `<Image src=${imgs} style{"width=1000 height=500"} />`;
       }
+      
+      setShowTextContainer(true)
     }
   };
 
-  // Initialize arc data with an empty array
   const [arcsData, setArcsData] = useState([]);
+  const handleTextContainerClick = () => {
+    setShowTextContainer(false);
+  }
 
   return (
     <div className='globe-container'>
       <div>
-        <div className='globe-text-container'>
-          {/* Display default message if no point is selected */}
+        <div className='globe-text-container' 
+          style={{ display: showTextContainer ? 'block' : 'none' }}
+          onClick={handleTextContainerClick}>
           {selectedPoint === null ? (
             <p style={{ fontWeight: 'bold', textAlign: 'center' }}>
-              - Select a location to see where we've been! -
+              - Select a location to see where we've been! (click twice) -
               <h4
                 style={{ fontWeight: 'lighter', textAlign: 'center' }}
               >(click on Denver-Homebase to follow our trail!)</h4>
@@ -72,13 +75,12 @@ const GlobePage = () => {
         </div>
       </div>
       <Globe
-        width='100%'
         globeImageUrl='//unpkg.com/three-globe/example/img/earth-blue-marble.jpg'
         bumbImageUrl='//unpkg.com/three-globe/example/img/earth-topology.png'
         backgroundImageUrl='//unpkg.com/three-globe/example/img/night-sky.png'
         pointColor={() => 'chartreuse'}
         pointAltitude={0.01}
-        pointRadius={0.2}
+        pointRadius={.6}
         pointsData={locationData}
         onPointClick={handlePointClick}
         arcsData={arcsData}
