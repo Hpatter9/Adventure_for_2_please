@@ -27,7 +27,7 @@ const ContactUs = () => {
 
   return (
     <div className='contact-us'>
-      <h1>Leave us a message or a question!</h1>
+      <h1>Let us hear from you!</h1>
       <form onSubmit={handleSubmit(onSubmit)}> {/* Pass onSubmit to handleSubmit */}
         <p>Have any questions about our adventures, or just wanna chat or comment? Leave us a message and we'll get back to you!</p>
         <input
