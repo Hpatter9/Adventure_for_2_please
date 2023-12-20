@@ -68,7 +68,7 @@ const GlobePage = () => {
               - Select a location to see where we've been! (click twice) -
               <h4
                 style={{ fontWeight: 'lighter', textAlign: 'center' }}
-              >(click on Denver-Homebase to follow our trail!)</h4>
+              >(click on Denver-Homebase to follow our trail from the start!!)</h4>
             </p>
           ) : (
             // Display location information when a point is selected

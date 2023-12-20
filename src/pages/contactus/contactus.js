@@ -1,71 +1,66 @@
 import React, { useState } from 'react';
+import useWeb3Forms from '@web3forms/react';
+import { useForm } from 'react-hook-form';
 import './contactus.css';
 
-
-
 const ContactUs = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [formData, setFormData] = useState({}); // Manage form data
+  const [message, setMessage] = useState('');
 
-const [phone, setPhone] = useState('');
-  const [questionOrComment, setQuestionOrComment] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  
-    fetch('http://localhost:3001/contactus', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        phone,
-        questionOrComment,
-      }),
-    })
-    .then((response) => response.json())
-    .then((data) => {
-      if (data.id) {
-        setSubmitted(true);
-        setName('');
-        setEmail('');
-        setPhone('');
-        setQuestionOrComment('');
-
-      } else {
-        alert('Error submitting form');
-      }
-    });
-    
-  };
-
+  const { register, handleSubmit } = useForm();
+  const { submit: onSubmit } = useWeb3Forms({
+    access_key: 'ccb0b42e-35c7-4c3a-93d0-b35bc215996e',
+    settings: {
+      from_name: 'Adventure for 2 Please',
+      subject: 'New Contact Message from your Website',
+    },
+    onSuccess: (msg, data) => {
+      console.log(msg);
+      setMessage('Message sent successfully!'); // Set success message
+      setFormData({}); // Reset form data
+    },
+    onError: (msg, data) => {
+      console.error(msg);
+      setMessage('Error sending message: ' + msg); // Set error message
+    },
+  });
 
   return (
-    <div className="contact-us">
-      <h1>Let us here from you</h1>
-
-      <form onSubmit={handleSubmit}>
+    <div className='contact-us'>
+      <h1>Leave us a message or a question!</h1>
+      <form onSubmit={handleSubmit(onSubmit)}> {/* Pass onSubmit to handleSubmit */}
         <p>Have any questions about our adventures, or just wanna chat or comment? Leave us a message and we'll get back to you!</p>
-        <label>Name:</label>
-        <input type="text" value={name} onChange={(event) => setName(event.target.value)} required />
-        <label>Email:</label>
-        <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} required />
-        <label>Phone:</label>
-        <input type="tel" value={phone} onChange={(event) => setPhone(event.target.value)} />
-        <label>Question or Comment:</label>
-        <textarea value={questionOrComment} onChange={(event) => setQuestionOrComment(event.target.value)} required />
-        <button type="submit">Submit</button>
+        <input
+          type='text'
+          {...register('name', {
+            required: 'Full name is required',
+            maxLength: 80,
+          })}
+          value={formData.name} // Bind input values to formData
+          placeholder="Full Name"
+        />
+        <input
+          type='email'
+          {...register('email', {
+            required: 'Enter your email',
+            pattern: {
+              value: /^\S+@\S+$/i,
+              message: 'Please enter a valid email',
+            },
+          })}
+          value={formData.email}
+          placeholder="Email Address"
+        />
+        <textarea
+          {...register('message', {
+            required: 'Enter your Message',
+          })}
+          value={formData.message}
+          placeholder="Leave us a message"
+        />
+        <button type='submit'>Submit Form</button>
       </form>
-
-      {submitted && (
-        <div className="success-message">
-          <p>Thank you for your message!</p>
-          <p>We will get back to you as soon as possible.</p>
-        </div>
-      )}
+      {message && <p className="message">{message}</p>}
     </div>
   );
 };

@@ -17,6 +17,7 @@
 5. Contact Us:
     - To start fake server, navigate to main src folder then run:
             json-server --watch db.json --port 3001
+    - implement a real api
 
 6. Header:
 
@@ -26,3 +27,4 @@
 
 9. General:
     - Create Jest Testing
+    - try a resize library
