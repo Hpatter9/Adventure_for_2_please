@@ -44,8 +44,8 @@ const LocationImages = {
     cangguImg: 'https://lh3.googleusercontent.com/pw/ADCreHfkbt9rq3lGI1MCUaV3ri4LwrPPNBBPyqjqowm95i6KA7EBuI2OzQhrBdI3w9KFCmeR2xR7wP4UouqrLq3zcg1SPE9QtNNj4tF2zd0SIxmpKpN5iV_5=w2400',
     seminyakImg: 'https://lh3.googleusercontent.com/pw/ADCreHdUwIekDx5lZ2EDs7SOx2aTzVef1PzOKvjBP3_RXbdG-8yeRBQhUt0yJYGkTBFe_HUPo6yD_gFGWojHj_DUBCnKHxMWql2K3Yy3tOis4gUgYYB8mTal=w2400',
     cologne2Img: 'https://lh3.googleusercontent.com/pw/ADCreHdDxXdUNohGLbjRrhscwrf3LL83cndUOEvgb84f7vpRTlgH1q2qpAAj-vgqRaXrKAdBPrkbD-YP1VXn2dQtEgORUFPpKxGjyFGYvrnxeY0dXUuo4bgW=w2400',
-    transAImg: "",
-    orlandoImg: "",
+    transAImg: "https://lh3.googleusercontent.com/pw/ABLVV87Mu4pkgiVysOn0Mj8QYfV40dXtabnq4s6fi_lfi2bw_NJQ36M-CTdc5KV88E0067xas9QxEg06HePaAoboVbNE_MFwLqVmiZnMwb_V7Z1yoE3-1HBN=w2400",
+    orlandoImg: "https://lh3.googleusercontent.com/pw/ABLVV844u8rSBzOYcBke6T1SPCcWgC4sTZPtsjehukKCXJXw9X3z-V_LtqbtEXUGciMmouzhiarXptfyTIXxvMkqSqFEe3fiiUfCscenA4ZwmRbGNSQBaMiQ=w2400",
 };
 
 export default LocationImages;
