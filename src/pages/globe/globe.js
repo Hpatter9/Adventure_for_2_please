@@ -28,13 +28,24 @@ const GlobePage = () => {
     return arcData;
   };
 
+  const calculatePathData = (selectedPoint) => {
+    return selectedPoint.paths;
+  };
+
 
 
   const handlePointClick = (point) => {
     setSelectedPoint(point);
 
-    const arcData = calculateArcData(point);
-    setArcsData([arcData]);
+    if (point.paths) {
+      const pathData = calculatePathData(point);
+      setPathsData([pathData]);
+      setArcsData([]); // Clear any existing arcs
+    } else {
+      const arcData = calculateArcData(point);
+      setArcsData([arcData]);
+      setPathsData([]); // Clear any existing paths
+    }
 
     if (locationInfoRef.current) {
       locationInfoRef.current.innerHTML = '';
@@ -53,6 +64,9 @@ const GlobePage = () => {
   };
 
   const [arcsData, setArcsData] = useState([]);
+
+  const [pathsData, setPathsData] = useState([]);
+
   const handleTextContainerClick = () => {
     setShowTextContainer(false);
   }
@@ -86,6 +100,11 @@ const GlobePage = () => {
         pointsData={locationData}
         onPointClick={handlePointClick}
         arcsData={arcsData}
+        pathsData={pathsData}
+        pathColor={() => 'white'}
+        pathDashLength = {0.1}
+        pathDashGap={0.008}
+        pathDashAnimateTime={12000}
       />
     </div>
   );
