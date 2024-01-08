@@ -60,6 +60,7 @@ const favorites = [
 
 const FavoritesSection = () => {
     const [isDragging, setIsDragging] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
     const [startX, setStartX] = useState(0);
 
     const handleMouseDown = (e) => {
@@ -100,6 +101,8 @@ const FavoritesSection = () => {
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
           style={{ touchAction: 'pan-x' }} // Enable touch-based dragging
         >
           {favorites.map((favorite) => (

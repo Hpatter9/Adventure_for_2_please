@@ -11,7 +11,7 @@ const About = () => {
     return(
         <div className='about-container'>
             <div className='about-background'>
-                <h2 className='about-header'>Little bit about us</h2>
+                <h1 className='about-header'>Little bit about us</h1>
                 <div className='about-text'>
                     <p>We are Hunter and Marlys, a couple who traded in their apartment for the open road in June 2022. Since then, we've been exploring the world one adventure at a time, seeking out new experiences and creating memories that will last a lifetime.</p>
                     <p>Our passion for travel stems from a shared desire to break free from the confines of routine and embrace the world's diversity. We believe that life is too short to stay in one place, and that the greatest adventures are often found just beyond our comfort zones.</p>

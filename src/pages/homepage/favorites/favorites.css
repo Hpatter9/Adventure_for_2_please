@@ -8,7 +8,15 @@
     border-bottom: 1px solid #205084;
     border-top: 1px solid #205084;
   }
-  
+
+  .favorites-container:hover {
+    cursor: grab;
+  }
+
+  .favorites-container:active {
+    cursor: grabbing;
+  }
+
   .favorites-section h2 {
     font-size: 3rem;
     font-weight: 700;

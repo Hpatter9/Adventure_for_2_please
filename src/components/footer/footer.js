@@ -30,7 +30,7 @@ const Footer = ()=> {
                     <li className = 'social-title'>Social Media</li>
                     <li className = 'social-item'><a href="https://www.facebook.com">Facebook</a></li>
                     <li className = 'social-item'><a href="https://www.instagram.com">Instagram</a></li>
-                    <li className = 'social-item'><a href="https://www.tictok.com">TicTok</a></li>
+                    <li className = 'social-item'><a href="https://www.tiktok.com/@adventurefor2please">TikTok</a></li>
                 </ul>
                 <p className='footer-copy'>&copy; 2023 Adventurefor2please. All rights Reserved.</p>
             </div>

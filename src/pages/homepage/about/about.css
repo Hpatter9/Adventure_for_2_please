@@ -19,7 +19,8 @@
   }
   
   .about-header {
-    font-size: 2rem;
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
     font-weight: bold;
     text-align: center;
     padding-bottom: 1rem;
